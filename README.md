@@ -42,11 +42,11 @@ To get started with the project, follow these steps:
    ```
 
 2. **Set Up Mobile UI**: 
-   - Navigate to the `mobile_ui` directory.
+   - Navigate to the `IOT_ui_java` directory.
    - Follow the instructions in the mobile UI readme file to set up the development environment and run the mobile application.
 
 3. **Set Up IoT Gateway**: 
-   - Navigate to the `iot_gateway` directory.
+   - Navigate to the `IOT_gateway` directory.
    - Follow the instructions in the IoT gateway readme file to set up the gateway software and configure communication with sensors and servers.
 
 4. **Connect Sensors and Server**: 
