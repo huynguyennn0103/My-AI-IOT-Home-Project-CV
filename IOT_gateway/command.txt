@@ -1,0 +1,33 @@
+conda deactivate
+python3 -m virtualenv env
+source env/bin/activate
+python3 main.py
+pip install adafruit-io
+pip install keras
+pip install tensorflow
+pip install Pillow
+pip install numpy
+pip install opencv-python
+pip install pyserial
+pip install python-dotenv
+pip install opencv-python-headless
+
+Powershell attach camera in wsl
+usbipd list
+usbipd bind --busid 2-2
+usbipd attach --wsl --busid 2-2
+
+usbipd detach --wsl --busid 2-2
+
+WSL create virtualport
+1 terminal: socat -d -d pty,raw,echo=0 pty,raw,echo=0
+1 terminal: python3 main.py
+1 terminal: 
+(sending)
+echo '!1:T:39.5#' > /dev/pts/15
+echo '!1:H:80#!1:T:29.5#' > /dev/pts/15
+echo '!1:H:80#!1:T:29.5#!1:L:70#' > /dev/pts/15
+echo '!1:T:39.5#' > /dev/pts/15
+
+(receiving)
+cat /dev/pts/15

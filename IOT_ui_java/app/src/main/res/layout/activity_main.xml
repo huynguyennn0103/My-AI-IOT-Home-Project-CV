@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/header_iot"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="LAB IOT DEMO"
+            android:gravity="center"
+            android:textColor="#1500ba"
+            android:textSize="24dp"
+            android:shadowColor="#0767ff"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="4"
+            android:textStyle="bold"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtTemperature"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="28*C"
+            android:textSize="40dp"
+            android:elevation="8dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:shadowColor="#2196F3"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="2"
+            android:background="@drawable/rounded_corner_temp"
+            android:drawableStart="@drawable/temperature"
+            android:padding="10dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/txtHumidity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_humi"
+            android:text="70%"
+            android:textSize="40dp"
+            android:elevation="8dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:shadowColor="#2196F3"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="2"
+            android:padding="10dp"
+            android:drawableStart="@drawable/humidity"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtLight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_light"
+            android:text="60 LX"
+            android:textSize="40dp"
+            android:elevation="8dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:shadowColor="#2196F3"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="2"
+            android:paddingLeft="76dp"
+            android:paddingRight="76dp"
+            android:drawableStart="@drawable/light"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtAi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_ai"
+            android:text="AI Recognition..."
+            android:textSize="24dp"
+            android:elevation="8dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:shadowColor="#2196F3"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:drawableLeft="@drawable/ai"
+
+            />
+
+    </LinearLayout>
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/btnLED"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="30dp"
+
+        app:textOn = "Bật"
+        app:textOff = "Tắt"
+
+        app:on="false"
+        app:colorBorder="@color/colorAccent"/>
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/btnPUMP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        app:textOn = "Bật"
+        app:textOff = "Tắt"
+
+        app:on="false"
+        app:colorBorder="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </LinearLayout>
+
+
+</LinearLayout>
